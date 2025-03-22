@@ -1,0 +1,8 @@
+{
+    "appService.zipIgnorePattern": [
+        "node_modules{,/**}",
+        ".vscode{,/**}"
+    ],
+    "appService.defaultWebAppToDeploy": "/subscriptions/24f8cb36-c140-4f8e-9d93-3f774c6b4722/resourceGroups/proving-ground/providers/Microsoft.Web/sites/nxt-hackathon-front-end",
+    "appService.deploySubpath": "."
+}
