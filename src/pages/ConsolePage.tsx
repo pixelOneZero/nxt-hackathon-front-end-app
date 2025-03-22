@@ -14,7 +14,6 @@ import { Toggle } from '../components/toggle/Toggle';
 import { Map } from '../components/Map';
 
 import './ConsolePage.scss';
-import { isJsxOpeningLikeElement } from 'typescript';
 
 
 /**
@@ -29,7 +28,7 @@ import { isJsxOpeningLikeElement } from 'typescript';
  */
 const LOCAL_RELAY_SERVER_URL: string =
   process.env.REACT_APP_LOCAL_RELAY_SERVER_URL || '';
-  
+
 /**
  * Type for result from get_weather() function call
  */
@@ -510,7 +509,7 @@ export function ConsolePage() {
     <div data-component="ConsolePage">
       <div className="content-top">
         <div className="content-title">
-          <img src="/openai-logomark.svg" />
+          <img src="/openai-logomark.svg" alt="logo" />
           <span>realtime console</span>
         </div>
         <div className="content-api-key">
