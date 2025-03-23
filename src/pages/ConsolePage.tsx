@@ -29,7 +29,7 @@ import './ConsolePage.scss';
 const LOCAL_RELAY_SERVER_URL: string =
   process.env.REACT_APP_LOCAL_RELAY_SERVER_URL || '';
 
-const OPENAI_API_KEY: string = process.env.REACT_APP_OPENAI_API_KEY || '';
+const OPENAI_API_KEY: string = process.env.REACT_APP_OPENAI_API_KEY || process.env.OPENAI_API_KEY  || '';
 
 /**
  * Type for result from get_weather() function call
