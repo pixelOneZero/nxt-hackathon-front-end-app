@@ -29,6 +29,8 @@ import './ConsolePage.scss';
 const LOCAL_RELAY_SERVER_URL: string =
   process.env.REACT_APP_LOCAL_RELAY_SERVER_URL || '';
 
+const OPENAI_API_KEY: string = process.env.REACT_APP_OPENAI_API_KEY || '';
+
 /**
  * Type for result from get_weather() function call
  */
@@ -61,14 +63,7 @@ export function ConsolePage() {
    * Ask user for API Key
    * If we're using the local relay server, we don't need this
    */
-  const apiKey = LOCAL_RELAY_SERVER_URL
-    ? ''
-    : localStorage.getItem('tmp::voice_api_key') ||
-      prompt('OpenAI API Key') ||
-      '';
-  if (apiKey !== '') {
-    localStorage.setItem('tmp::voice_api_key', apiKey);
-  }
+  const apiKey = OPENAI_API_KEY;
 
   /**
    * Instantiate:
